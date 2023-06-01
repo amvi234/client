@@ -144,9 +144,9 @@ const Login = ({ isUserAuthenticated }) => {
                         </Wrapper> 
                     :
                         <Wrapper>
-                            <TextField variant="standard" onChange={(e) => onInputChange(e)} name='name' label='Enter Name' />
-                            <TextField variant="standard" onChange={(e) => onInputChange(e)} name='username' label='Enter Username' />
-                            <TextField variant="standard" onChange={(e) => onInputChange(e)} name='password' label='Enter Password' />
+                            <TextField  onChange={(e) => onInputChange(e)} name='name' label='Enter Name' />
+                            <TextField  onChange={(e) => onInputChange(e)} name='username' label='Enter Username' />
+                            <TextField  onChange={(e) => onInputChange(e)} name='password' label='Enter Password' />
                             {error && <Error>{error}</Error>}
                             <SignupButton onClick={() => signupUser()} >Signup</SignupButton>
                             <Text style={{ textAlign: 'center' }}>OR</Text>
